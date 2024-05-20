@@ -2,9 +2,6 @@
 
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.KernelMemory.DataFormats;
-using Microsoft.KernelMemory.DataFormats.Image;
-using Microsoft.KernelMemory.DataFormats.Office;
-using Microsoft.KernelMemory.DataFormats.Pdf;
 using Microsoft.KernelMemory.DataFormats.Text;
 using Microsoft.KernelMemory.DataFormats.WebPages;
 
@@ -78,11 +75,6 @@ public static partial class DependencyInjection
         services.AddSingleton<IContentDecoder, TextDecoder>();
         services.AddSingleton<IContentDecoder, MarkDownDecoder>();
         services.AddSingleton<IContentDecoder, HtmlDecoder>();
-        services.AddSingleton<IContentDecoder, PdfDecoder>();
-        services.AddSingleton<IContentDecoder, ImageDecoder>();
-        services.AddSingleton<IContentDecoder, MsExcelDecoder>();
-        services.AddSingleton<IContentDecoder, MsPowerPointDecoder>();
-        services.AddSingleton<IContentDecoder, MsWordDecoder>();
 
         return services;
     }
