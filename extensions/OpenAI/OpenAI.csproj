@@ -22,7 +22,6 @@
     </ItemGroup>
 
     <PropertyGroup>
-        <IsPackable>true</IsPackable>
         <PackageId>Microsoft.KernelMemory.AI.OpenAI</PackageId>
         <Product>OpenAI LLM connector for Kernel Memory</Product>
         <Description>Provide access to OpenAI LLM models in Kernel Memory to generate embeddings and text</Description>
